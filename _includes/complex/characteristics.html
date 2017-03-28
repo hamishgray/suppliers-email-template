@@ -1,0 +1,136 @@
+
+{% assign case-studies = page.case-studies[include.case-study] %}
+
+{% for case-study in case-studies %}
+
+
+<!-- THREE COLUMN SECTION -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td bgcolor="#f1f1f2" align="center" style="padding: 0;">
+
+      <!-- FIRST ROW -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
+        <tr>
+          <td>
+
+            <!-- ENTIRE ROW -->
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+
+                  <!-- FIRST TWO COLUMNS -->
+                  <table align="left" border="0" cellspacing="0" cellpadding="0" class="responsive-table" width="395">
+                    <tr>
+                      <td>
+
+                        <!-- FIRST COLUMN -->
+                        <table align="left" border="0" cellspacing="0" cellpadding="0" class="responsive-table" width="190">
+                          <tr>
+                            <td style="padding-bottom: 30px; text-align:center;">
+
+                              <!-- CONTENT START -->
+                              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="padding:0 5px 10px 5px;">
+                                    <img src="{{ site.baseurl }}/img/icons/discount.png" width="40" alt="">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding:0 5px 10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h4 }}">
+                                    High discount
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 12px; line-height: 20px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #333; text-align: center; padding: 0 5px;">
+                                    50% discount against your site and other OTAs. This level of discount might sound a little daunting, but is in fact easily achievable through added values.
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- CONTENT END -->
+
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- FIRST COLUMN END -->
+
+                        <!-- SECOND COLUMN -->
+                        <table align="right" border="0" cellspacing="0" cellpadding="0" class="responsive-table" width="190">
+                          <tr>
+                            <td style="padding-bottom: 30px; text-align:center;">
+
+                              <!-- CONTENT START -->
+                              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="padding:0 5px 10px 5px;">
+                                    <img src="{{ site.baseurl }}/img/icons/availability.png" width="40" alt="">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding:0 5px 10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h4 }}">
+                                    Good availability
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 12px; line-height: 20px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #333; text-align: center; padding: 0 5px;;">
+                                    The deal should have a minimum travel window of three months and include at least 50% of weekends within that travel window.
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- CONTENT END -->
+
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- SECOND COLUMN -->
+
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- FIRST TWO COLUMNS END -->
+
+                  <!-- THIRD COLUMN -->
+                  <table align="right" border="0" cellspacing="0" cellpadding="0" class="responsive-table" width="190">
+                    <tr>
+                      <td style="padding-bottom: 30px; text-align:center;">
+
+                        <!-- CONTENT START -->
+                        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:0 5px 10px 5px;">
+                              <img src="{{ site.baseurl }}/img/icons/extraordinary.png" width="40" alt="">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0 5px 10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h4 }}">
+                              Extraordinary offer
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="font-size: 12px; line-height: 20px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #333; text-align: center; padding: 0 5px;">
+                              To keep our members engaged with and excited by our 24-hour sales, the lead-in rate should be at least £10 lower than your usual offer. Price exclusivity is key.
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- CONTENT END -->
+
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- THIRD COLUMN END -->
+
+                </td>
+              </tr>
+            </table>
+            <!-- ENTIRE ROW END -->
+
+          </td>
+        </tr>
+      </table>
+      <!-- FIRST ROW END -->
+
+    </td>
+  </tr>
+</table>
+
+{% endfor %}
