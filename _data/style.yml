@@ -1,18 +1,23 @@
 
 # Theme colours
 color-se-orange: ff8c00 #ff8c00
+color-se-light-orange: febe77 #febe77
+color-se-extralight-orange: feddb7 #feddb7
+color-se-dark-orange: bf6900 #bf6900
+color-se-extradark-orange: 7b521e #7b521e
 color-se-black: 222222 #222222
-color-se-grey: ececec #ececec
+color-se-grey: dddddd #dddddd
 color-text-title: 0d0d0d #0d0d0d
 color-text-paragraph: 5f5f5f #5f5f5f
+color-black: 0d0d0d #0d0d0d
 
 # Typography
 text-banner: "font-size: 48px; line-height: 50px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 200; text-transform:uppercase; letter-spacing:6px;"
 
 text-h1: "font-size: 27px; line-height: 35px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 200;"
 text-h2: "font-size: 22px; line-height: 27px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 500;"
-text-h3: "font-size: 20px; line-height: 24px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; text-transform: uppercase; letter-spacing: 3px;"
-text-h4: "font-size: 17px; line-height: 22px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 600;"
+text-h3: "font-size: 18px; line-height: 24px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 600;"
+text-h4: "font-size: 17px; line-height: 22px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; text-transform: uppercase; letter-spacing: 3px;"
 text-h5: "font-size: 14px; line-height: 18px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; text-transform: uppercase; letter-spacing: 2px;"
 text-p-lead: "font-size: 17px; line-height: 27px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 200;"
 text-p: "font-size: 14px; line-height: 21px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300;"

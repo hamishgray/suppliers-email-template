@@ -1,13 +1,10 @@
 
-{% assign case-studies = page.case-studies[include.case-study] %}
-
-{% for case-study in case-studies %}
 
 
 <!-- THREE COLUMN SECTION -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td bgcolor="#f1f1f2" align="center" style="padding: 0;">
+    <td bgcolor="#f1f1f2" align="center" style="padding: 0 15px;">
 
       <!-- FIRST ROW -->
       <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
@@ -32,18 +29,18 @@
                               <!-- CONTENT START -->
                               <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                  <td style="padding:0 5px 10px 5px;">
+                                  <td align="center" style="padding:0 5px 10px 5px; text-align: center;">
                                     <img src="{{ site.baseurl }}/img/icons/discount.png" width="40" alt="">
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="padding:0 5px 10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h4 }}">
+                                  <td align="center" style="padding:10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h5 }}">
                                     High discount
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 12px; line-height: 20px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #333; text-align: center; padding: 0 5px;">
-                                    50% discount against your site and other OTAs. This level of discount might sound a little daunting, but is in fact easily achievable through added values.
+                                  <td align="center" style="padding: 0 5px; {{ site.data.style.text-p-small }}">
+                                    40% discount against your site and other OTAs. This level of discount might sound a little daunting, but is in fact easily achievable through added values.
                                   </td>
                                 </tr>
                               </table>
@@ -62,18 +59,18 @@
                               <!-- CONTENT START -->
                               <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                  <td style="padding:0 5px 10px 5px;">
+                                  <td align="center" style="padding:0 5px 10px 5px; text-align: center;">
                                     <img src="{{ site.baseurl }}/img/icons/availability.png" width="40" alt="">
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="padding:0 5px 10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h4 }}">
+                                  <td align="center" style="padding:10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h5 }}">
                                     Good availability
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 12px; line-height: 20px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #333; text-align: center; padding: 0 5px;;">
-                                    The deal should have a minimum travel window of three months and include at least 50% of weekends within that travel window.
+                                  <td align="center" style="padding: 0 5px; {{ site.data.style.text-p-small }}">
+                                    The deal should have a minimum travel window of two months and include at least 50% of weekends within that travel window.
                                   </td>
                                 </tr>
                               </table>
@@ -97,18 +94,18 @@
                         <!-- CONTENT START -->
                         <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td style="padding:0 5px 10px 5px;">
+                            <td align="center" style="padding:0 5px 10px 5px; text-align: center;">
                               <img src="{{ site.baseurl }}/img/icons/extraordinary.png" width="40" alt="">
                             </td>
                           </tr>
                           <tr>
-                            <td style="padding:0 5px 10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h4 }}">
-                              Extraordinary offer
+                            <td align="center" style="padding:10px 5px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h5 }}">
+                              Great offer
                             </td>
                           </tr>
                           <tr>
-                            <td style="font-size: 12px; line-height: 20px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #333; text-align: center; padding: 0 5px;">
-                              To keep our members engaged with and excited by our 24-hour sales, the lead-in rate should be at least £10 lower than your usual offer. Price exclusivity is key.
+                            <td align="center" style="padding: 0 5px; {{ site.data.style.text-p-small }}">
+                              To keep our members engaged with and excited by our 24-hour sales, the lead-in rate should be lower than the rate for your lowest room type. Price exclusivity is key.
                             </td>
                           </tr>
                         </table>
@@ -132,5 +129,3 @@
     </td>
   </tr>
 </table>
-
-{% endfor %}

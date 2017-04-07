@@ -4,77 +4,82 @@ title: Overview
 nav-order: 1
 
 
-subject-line: !!!! Subject line here !!!!
-campaign-link: campaign-link
-main-cta-label: Participate in our next 24-hour deal
+subject-line: "Case study: how we sold 900 room nights in just 24 hours for one of our hotel partners"
+campaign-link: "mailto:{!Account.OwnerFirstName}.{!Account.OwnerLastName}@secretescapes.com"
+main-cta-label: Participate in our next 24-hour sale
 
 
-banner-title: A luxury European city break? Yes please
+banner-title:
 
 
-intro-super-title:
-intro-title:
-intro-sub-title: Dear {!Contact.FirstName}
-intro-rows:
-  - paragraph: Do you know about Secret Escapes’ hugely successful 24-hour sales? As a partner, you can use these one-day-only sales to strategically to boost revenue in-between your regular promotions with us.
-  - paragraph: We run 24-hour sales fortnightly and our members love them. One of our hotel partners sold 889 room nights and grossed over £119,000 in TTV in a single 24-hour sale.
+objects:
 
-
-text-sections:
-
-  1:
-    - super-title: How do we guarantee the success of 24-hour sales?
-      title: How do we guarantee the success of 24-hour sales?
+  intro:
+    - title:
+      super-title:
+      sub-title: Dear {!Contact.FirstName}
+      image: intro
+      cta:
+      cta-label:
+      link:
       content:
-        - paragraph: "4.5 million members receive a dedicated 24-hour sale email, showcasing the deals available"
-        - paragraph: "Hotels and holidays in the 24-hour sale get top ranking on our current sales page for the duration of the sale, as well as their own dedicated landing page."
-        - paragraph: "A selection of 24-hour sale deals will be chosen as ‘Editor’s Pick’ and featured at the top of our current sales page throughout the day."
-        - paragraph: "To give your property maximum exposure, we only feature one hotel per UK region, so there’s no direct competition, we also limit the number of UK hotels in the sale to a maximum of eight."
+      content-rows:
+        - paragraph: Do you know about Secret Escapes’ hugely successful 24-hour sales? As a partner, you can use these one-day-only sales to strategically to boost revenue in-between your regular promotions with us.
+        - paragraph: We run 24-hour sales fortnightly and our members love them. One of our hotel partners sold 889 room nights and grossed over £119,000 in TTV in a single 24-hour sale.
 
-
-case-studies:
-
-  1:
-    - title: The characteristics of a top-performing 24-hour deal
-      class: top-performer
+  guarantee:
+    - title:
+      super-title: How do we guarantee the success of 24-hour sales?
+      sub-title:
+      image: graphs
+      image-caption: 24-HOUR SALES CAN DELIVER REMARKABLE RESULTS RELATIVE TO THE DAILY PERFORMANCE OF A LONGER SALE
+      cta:
+      cta-label:
+      link:
       content:
-        - title: High discount
-          class: high-discount
-          content: "50% discount against your site and other OTAs. This level of discount might sound a little daunting, but is in fact easily achievable through added values. Examples of value adds that can help contribute towards the discount include: wine with dinner, afternoon tea, a room category upgrade, a spa treatment, or a bottle of prosecco/champagne on arrival."
-        - title: Good availability
-          class: availability
-          content: "The deal should have a minimum travel window of three months and include at least 50% of weekends within that travel window."
-        - title: Exceptional offer
-          class: exceptional-offer
-          content: "To keep our members engaged with and excited by our 24-hour sales, the lead-in rate should be at least £10 lower than your usual offer. Price exclusivity is key."
+      content-rows:
+        - pre: 1
+          paragraph: "4.5 million members receive a dedicated 24-hour sale email, showcasing the deals available"
+        - pre: 2
+          paragraph: "Hotels and holidays in the 24-hour sale get top ranking on our current sales page for the duration of the sale, as well as their own dedicated landing page."
+        - pre: 3
+          paragraph: "A selection of 24-hour sale deals will be chosen as ‘Editor’s Pick’ and featured at the top of our current sales page throughout the day."
+        - pre: 4
+          paragraph: "To give your property maximum exposure, we only feature one hotel per UK region, so there’s no direct competition, we also limit the number of UK hotels in the sale to a maximum of eight."
 
 
 ---
 
 
 
-{% include intro-standard.html %}
+
+{% include complex/feature.html object="intro" %}
 
 
-{% include complex/guarantee.html section=1 %}
+{% include basic/feature.html
+  sub-title="Email <a style='color:white;text-decoration:none; word-break: break-all;' href='mailto:{!Account.OwnerFirstName}.{!Account.OwnerLastName}@secretescapes.com'>{!Account.OwnerFirstName}.{!Account.OwnerLastName}@secretescapes.com</a>, to participate in our next 24-hour sale or to chat about how this type of promotion could work for you." 
+  cta="true"
+  image="casestudy"
+  theme="dark" %}
 
 
-{% include section-intro.html title="The characteristics of a top-performing 24-hour deal" %}
+{% include complex/feature.html object="guarantee" %}
 
 
-{% include complex/characteristics.html case-study=1 %}
+{% include basic/section-intro.html title="The characteristics of a top-performing 24-hour deal" %}
 
 
-{% include block/spacer.html %}
+{% include custom/characteristics.html %}
 
 
-{% include section-intro.html title="Upcoming 24-hour sale dates" %}
+{% include basic/spacer.html height="15" %}
 
 
-{% include block/image.html class="dates" %}
+{% include basic/section-intro.html title="Upcoming 24-hour sale dates" %}
 
 
-{% include block/spacer.html %}
-{% include block/spacer.html %}
-{% include block/spacer.html %}
+{% include basic/image.html class="dates" %}
+
+
+{% include basic/spacer.html height="45" %}
 

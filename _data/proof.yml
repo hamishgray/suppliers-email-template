@@ -1,13 +1,15 @@
 
   - title: An experienced team behind every offer
-    class: team
-    description: Our travel experts are people, not algorithms. So we know we only bring you the very best hotels and offers.
+    image: team
+    cta:
     cta-label:
     link:
+    content: Our travel experts are people, not algorithms. So we know we only bring you the very best hotels and offers.
 
   - title: Each deal price-checked 4 times
-    class: price-checked
-    description: Which means our prices are the lowest – guaranteed. You won’t find a lower price online anywhere. (We’ll even help you look.)
+    image: price-checked
+    cta:
     cta-label:
     link:
+    content: Which means our prices are the lowest – guaranteed. You won’t find a lower price online anywhere. (We’ll even help you look.)
 

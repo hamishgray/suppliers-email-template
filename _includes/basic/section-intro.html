@@ -1,9 +1,26 @@
 
+{% if include.bgcolor %}
+  {% assign bgcolor = include.bgcolor %}
+{% else %}
+  {% assign bgcolor = "f2f2f2" %}
+{% endif %}
+
+{% if include.theme == "dark" %}
+  <!-- theme card for dark background -->
+  {% assign color-text-title = "ffffff" %}
+  {% assign color-text-paragraph = "ffffff" %}
+  {% assign color-se-grey = "444444" %}
+{% else %}
+  <!-- set colours to default -->
+  {% assign color-se-grey = site.data.style.color-se-grey %}
+  {% assign color-text-title = site.data.style.color-text-title %}
+  {% assign color-text-paragraph = site.data.style.color-text-paragraph %}
+{% endif %}
 
 <!-- EMAIL INTRO - STANDARD -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td bgcolor="#f2f2f2" align="center" style="padding: 0 0 30px;">
+    <td bgcolor="#{{ bgcolor }}" {% if include.bgcolor %}style="padding: 30px 0;"{% else %}style="padding: 0 0 30px 0;"{% endif %} align="center">
       <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
         <tr>
           <td>
@@ -15,7 +32,7 @@
                   <table align="center" width="100" border="0" cellspacing="0" cellpadding="0"  style="height:30px;">
                     <tr>
                       <td align="center"
-                        style="background:none; height:15px; width:100px; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; padding:0; line-height:0; border-bottom: 1px solid #e0e0e0;">
+                        style="background:none; height:15px; width:100px; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; padding:0; line-height:0; border-bottom: 1px solid #{{ color-se-grey }};">
                         <div style="width:100px;"></div>
                       </td>
                     </tr>
@@ -30,7 +47,7 @@
 
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="center" style="padding: 0 30px 0px; color: #{{ site.data.style.color-text-title }}; {{ site.data.style.text-h2 }}" class="padding-copy-header">
+                <td align="center" style="padding: 0 30px 0px; color: #{{ color-text-title }}; {{ site.data.style.text-h2 }}" class="padding-copy-header">
                   {{ include.title }}
                 </td>
               </tr>
@@ -43,7 +60,7 @@
                   <table align="center" width="100" border="0" cellspacing="0" cellpadding="0"  style="height:30px;">
                     <tr>
                       <td align="center"
-                        style="background:none; height:15px; width:100px; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; padding:0; line-height:0; border-bottom: 1px solid #e0e0e0;">
+                        style="background:none; height:15px; width:100px; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; padding:0; line-height:0; border-bottom: 1px solid #{{ color-se-grey }};">
                         <div style="width:100px;"></div>
                       </td>
                     </tr>
@@ -59,7 +76,7 @@
             {% if include.content %}
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="center" style="padding: 0px 30px 10px; text-align: center; color: #{{ site.data.style.color-text-paragraph }}; {{ site.data.style.text-p }}">
+                <td align="center" style="padding: 0px 30px 10px; text-align: center; color: #{{ color-text-paragraph }}; {{ site.data.style.text-p }}">
                   {{ include.content }}
                 </td>
               </tr>
